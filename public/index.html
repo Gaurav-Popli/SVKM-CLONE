@@ -2594,31 +2594,43 @@ function speakNaturally(text) {
         };
 
         function localVerifiedAnswer(question) {
-            const q = String(question).toLowerCase().trim();
-            if (!q) return null;
-            if ((q.includes('bca') || q.includes('b.c.a')) && /fee|fees|cost|tuition|per year|yearly/.test(q)) {
-                return `The verified BCA fee is ${VERIFIED_NMIMS.fees.BCA}.`;
-            }
-            if ((q.includes('bba') || q.includes('b.b.a')) && /fee|fees|cost|tuition|per year|yearly/.test(q)) {
-                return `The verified BBA fee is ${VERIFIED_NMIMS.fees.BBA}.`;
-            }
-            if (/program|programme|course|courses|what.*offer|offered/.test(q)) {
-                return VERIFIED_NMIMS.schools.map(s => `${s.name}: ${s.programs.join(', ')}.`).join('\n');
-            }
-            if (/entrance|exam|test|cet|jee|neet|sat|gate|gpat|npat|pera/.test(q)) {
-                return `The verified admission tests listed for the 2026-27 information set are: ${VERIFIED_NMIMS.tests.join(', ')}.`;
-            }
-            if (/apply|application|admission form|online form/.test(q)) {
-                return `You can apply online through the official university application facility: ${VERIFIED_NMIMS.apply}`;
-            }
-            if (/address|location|where.*university|where.*campus/.test(q)) {
-                return `The Dhule campus address is: ${VERIFIED_NMIMS.address}`;
-            }
-            if (/contact|phone|mobile|number|admission office|call admissions/.test(q)) {
-                return `For admissions, School of Commerce: ${VERIFIED_NMIMS.schools[0].contacts.join(' or ')}. School of Technology Management and Engineering: ${VERIFIED_NMIMS.schools[1].contacts.join(' or ')}. School of Pharmacy & Technology Management: ${VERIFIED_NMIMS.schools[2].contacts.join(' or ')}.`;
-            }
-            return null;
-        }
+    const q = String(question).toLowerCase().trim();
+    if (!q) return null;
+
+    if ((q.includes('bca') || q.includes('b.c.a')) && /fee|fees|cost|tuition|per year|yearly/.test(q)) {
+        return `The verified BCA fee is ${VERIFIED_NMIMS.fees.BCA}.`;
+    }
+
+    if ((q.includes('bba') || q.includes('b.b.a')) && /fee|fees|cost|tuition|per year|yearly/.test(q)) {
+        return `The verified BBA fee is ${VERIFIED_NMIMS.fees.BBA}.`;
+    }
+
+    if (/fee|fees|cost|tuition|per year|yearly/.test(q)) {
+        return 'Which programme are you interested in? I can check the verified fee information available for that programme.';
+    }
+
+    if (/program|programme|course|courses|what.*offer|offered/.test(q)) {
+        return VERIFIED_NMIMS.schools.map(s => `${s.name}: ${s.programs.join(', ')}.`).join('\n');
+    }
+
+    if (/entrance|exam|test|cet|jee|neet|sat|gate|gpat|npat|pera/.test(q)) {
+        return `The verified admission tests listed for the 2026-27 information set are: ${VERIFIED_NMIMS.tests.join(', ')}.`;
+    }
+
+    if (/apply|application|admission form|online form/.test(q)) {
+        return `You can apply online through the official university application facility: ${VERIFIED_NMIMS.apply}`;
+    }
+
+    if (/address|location|where.*university|where.*campus/.test(q)) {
+        return `The Dhule campus address is: ${VERIFIED_NMIMS.address}`;
+    }
+
+    if (/contact|phone|mobile|number|admission office|call admissions/.test(q)) {
+        return `For admissions, School of Commerce: ${VERIFIED_NMIMS.schools[0].contacts.join(' or ')}. School of Technology Management and Engineering: ${VERIFIED_NMIMS.schools[1].contacts.join(' or ')}. School of Pharmacy & Technology Management: ${VERIFIED_NMIMS.schools[2].contacts.join(' or ')}.`;
+    }
+
+    return null;
+}
 
         async function sendMessage() {
             const input = document.getElementById('chatbotInput');
