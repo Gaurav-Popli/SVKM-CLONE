@@ -1,0 +1,115 @@
+{
+  "source_policy": {
+    "description": "Verified information compiled from the official SVKM NMIMS Global University website for the AY 2026-27 demo. If a question is not covered here, the assistant should direct the user to the official website or admissions office rather than invent an answer.",
+    "official_website": "https://www.svkmnmimsgu.ac.in/"
+  },
+  "university_info": {
+    "name": "SVKM NMIMS Global University",
+    "campus": "Dhule",
+    "address": "Survey No. 499, Plot No. 01, 02 & 03, Behind Gurudwara, Mumbai-Agra National Highway, Dhule - 424001, Maharashtra, India",
+    "description": "SVKM NMIMS Global University is a state-private university in Dhule, Maharashtra."
+  },
+  "admissions": {
+    "academic_year": "2026-27",
+    "application": "Online applications are available through the university's official Apply Online facility.",
+    "application_form_fee": "₹300, non-refundable.",
+    "important_note": "Admission schedules and eligibility vary by programme. Do not state a single university-wide admission deadline unless it is specifically verified for the programme in question.",
+    "official_apply_url": "https://www.svkmnmimsgu.ac.in/careers/apply-online",
+    "eligibility_url": "https://www.svkmnmimsgu.ac.in/admission-instruction-eligibility"
+  },
+  "schools": [
+    {
+      "name": "School of Commerce",
+      "programs": [
+        "Bachelor of Business Administration (BBA)",
+        "Bachelor in Computer Applications (BCA)"
+      ],
+      "admission_contact": [
+        "9272110073",
+        "8788701642"
+      ]
+    },
+    {
+      "name": "School of Technology Management and Engineering",
+      "programs": [
+        "BTech - Civil Engineering",
+        "BTech - Computer Engineering",
+        "BTech - Computer Science & Engineering (AI & ML)",
+        "BTech - Computer Science & Engineering (Data Science)",
+        "BTech - Electrical Engineering",
+        "BTech - Mechanical Engineering",
+        "BTech + MBA (Tech Management)",
+        "MTech - Civil Engineering",
+        "MTech - Computer Engineering",
+        "MTech - Electrical Engineering",
+        "MTech - Mechanical Engineering",
+        "Master of Computer Applications (MCA)",
+        "PhD (Technology/Engineering)"
+      ],
+      "admission_contact": [
+        "9425685966",
+        "9764405069"
+      ]
+    },
+    {
+      "name": "School of Pharmacy & Technology Management",
+      "programs": [
+        "DPharmacy",
+        "BPharmacy",
+        "MPharmacy",
+        "BPharm + MBA (Pharma Tech.)",
+        "BTech (Cosmetic Technology)"
+      ],
+      "admission_contact": [
+        "9158947999",
+        "8668501496"
+      ]
+    }
+  ],
+  "admission_tests": [
+    "MHT-CET",
+    "JEE",
+    "NEET",
+    "NCET / NMIMS-CET",
+    "SAT",
+    "PERA-CET",
+    "NPAT",
+    "GATE",
+    "GPAT"
+  ],
+  "fees": {
+    "note": "Fees are programme-specific. The chatbot must not quote a fee unless it is backed by a current official programme page or fee document.",
+    "verified_examples": {
+      "BBA": "₹75,000 per annum",
+      "BCA": "₹60,000 per annum"
+    }
+  },
+  "contact": {
+    "general_address": "Survey No. 499, Plot No. 01, 02 & 03, Behind Gurudwara, Mumbai-Agra National Highway, Dhule - 424001, Maharashtra, India",
+    "school_of_commerce": [
+      "02562 350600",
+      "9272110073",
+      "8788701642"
+    ],
+    "school_of_technology_management_and_engineering": [
+      "02562 350620",
+      "9425685966",
+      "9764405069"
+    ],
+    "school_of_pharmacy_and_technology_management": [
+      "02562 350640",
+      "9158947999",
+      "8668501496"
+    ]
+  },
+  "official_links": {
+    "home": "https://www.svkmnmimsgu.ac.in/",
+    "apply_online": "https://www.svkmnmimsgu.ac.in/careers/apply-online",
+    "admission_eligibility": "https://www.svkmnmimsgu.ac.in/admission-instruction-eligibility",
+    "contact": "https://www.svkmnmimsgu.ac.in/contact-us",
+    "admission_contact": "https://www.svkmnmimsgu.ac.in/contact-admissions",
+    "commerce_admissions": "https://www.svkmnmimsgu.ac.in/commerce-admission-handout",
+    "technology_admissions": "https://www.svkmnmimsgu.ac.in/technology-admission-handout",
+    "pharmacy_admissions": "https://www.svkmnmimsgu.ac.in/pharmacy-admission-handout"
+  }
+}
